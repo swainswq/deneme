@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arama ve Çıktı</title>
+    <title>Log Arama</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Arama ve Çıktı</h1>
-        <input type="text" id="searchInput" placeholder="Aramak için yazın...">
-        <button onclick="search()">Ara</button>
+        <h1>Log Arama</h1>
+        <input type="text" id="searchInput" placeholder="Arama yapın...">
+        <button onclick="searchLog()">Ara</button>
         <div id="output"></div>
-        <a id="downloadLink" style="display: none;" download="log.txt">Sonuçları İndir</a>
+        <input type="number" id="lineCount" min="1" max="30" placeholder="Kaç satır istiyorsunuz?">
+        <button onclick="showLines()">Satırları Göster</button>
     </div>
 
     <script src="script.js"></script>
