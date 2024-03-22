@@ -11,7 +11,7 @@
         }
         .container {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 50px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
@@ -20,6 +20,9 @@
         h1 {
             text-align: center;
         }
+        form {
+            margin-bottom: 20px;
+        }
         input[type="text"], input[type="number"], button {
             display: block;
             width: 100%;
@@ -27,6 +30,7 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
         }
         button {
             background-color: #007bff;
@@ -37,14 +41,16 @@
             background-color: #0056b3;
         }
         #output {
-            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Log Arama</h1>
-        <form method="post">
+        <form action="" method="post">
             <input type="text" name="siteUrl" placeholder="Site URL">
             <input type="number" name="logCount" min="1" max="30" placeholder="Kaç log gösterilsin?">
             <button type="submit">Ara</button>
